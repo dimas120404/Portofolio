@@ -1,0 +1,254 @@
+/* ===== BASE ===== */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background: #f4f9ff;
+    overflow-x: hidden;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #0099cc, #00bfff);
+    color: white;
+    padding: 80px 0 100px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 255, 255, 0.9);
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.name {
+    font-size: 2.6em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.btn {
+    background: white;
+    color: #007acc;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: #007acc;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.about-left {
+    flex: 1;
+    min-width: 200px;
+    text-align: right;
+    padding-right: 30px;
+    border-right: 3px solid #007acc;
+}
+
+.about-left h2 {
+    font-size: 2em;
+    color: #007acc;
+    margin-bottom: 10px;
+}
+
+.about-right {
+    flex: 2;
+    min-width: 300px;
+}
+
+.about-right p {
+    line-height: 1.8;
+    font-size: 1.05em;
+    text-align: justify;
+    color: #444;
+}
+
+/* ===== PROFILE PHOTO ===== */
+.profile-photo {
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.6));
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px auto;
+  transition: transform 0.3s ease;
+}
+.profile-photo:hover {
+  transform: scale(1.05);
+}
+.profile-photo {
+  animation: fadeDown 1s ease-in-out;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.bg-light {
+  background: #ffffff;
+}
+
+/* ===== SKILLS ===== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill {
+  background: #0077b6;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+  background: #0096c7;
+}
+
+.skill i {
+  margin-right: 8px;
+}
+
+/* ===== PROJECTS ===== */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-section {
+    text-align: center;
+    background: #eaf7ff;
+    padding: 60px 20px 100px;
+}
+
+.contact-section h2 {
+    color: #007acc;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.contact-section p {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+    text-align: center;
+    background: #eaf7ff;
+    padding: 60px 20px 100px;
+}
+
+.contact-section h2 {
+    color: #007acc;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.contact-section p {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+}
+
+/* ===== ANIMATIONS ===== */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.8s ease forwards;
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: slideUp 1.6s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.profile-photo {
+  animation: fadeDown 1s ease-in-out;
+}

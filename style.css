@@ -2002,3 +2002,62 @@ img {
     }
 
 }
+
+/* =========================================================
+   IMPLEMENTASI TEKNIS
+========================================================= */
+
+.technical-section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.technical-description {
+    max-width: 900px;
+
+    margin-bottom: 18px;
+
+    color: #718096;
+
+    font-size: 0.86rem;
+
+    line-height: 1.7;
+}
+
+.technical-image {
+    overflow: hidden;
+
+    border: 1px solid #dfe6f0;
+
+    border-radius: 16px;
+
+    background: #0f172a;
+
+    box-shadow:
+        0 10px 25px rgba(20, 40, 70, 0.08);
+}
+
+.technical-image img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+    object-fit: contain;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .technical-description {
+        font-size: 0.82rem;
+    }
+
+    .technical-image {
+        border-radius: 12px;
+    }
+
+}

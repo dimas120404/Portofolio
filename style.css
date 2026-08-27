@@ -1562,3 +1562,316 @@ img {
     }
 
 }
+
+/* =========================================================
+   FEATURED PROJECT - FINAL REFINEMENT
+========================================================= */
+
+.featured-project {
+    overflow: hidden;
+    border: 1px solid #dfe6f0;
+    border-radius: 24px;
+    background: #ffffff;
+    box-shadow: 0 18px 50px rgba(20, 40, 70, 0.08);
+}
+
+
+/* HEADER PROJECT */
+
+.featured-header {
+    padding: 38px 40px 20px;
+}
+
+.featured-header h3 {
+    max-width: 900px;
+}
+
+
+/* DESKRIPSI */
+
+.featured-description {
+    max-width: 900px;
+    padding: 0 40px 25px;
+}
+
+
+/* ROLE */
+
+.featured-section {
+    padding: 24px 40px;
+    border-top: 1px solid #edf0f5;
+}
+
+.role-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+
+/* =========================================================
+   MAIN PROJECT IMAGE
+========================================================= */
+
+.featured-main-image {
+    margin: 0 40px 25px;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid #dfe6f0;
+    background: #0f172a;
+    
+    /* PERBESAR GAMBAR UTAMA */
+    aspect-ratio: 16 / 8;
+}
+
+.featured-main-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.5s ease;
+}
+
+.featured-main-image:hover img {
+    transform: scale(1.02);
+}
+
+
+/* =========================================================
+   PROJECT GALLERY
+========================================================= */
+
+.project-gallery {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.project-shot {
+    overflow: hidden;
+
+    margin: 0;
+
+    border: 1px solid #dfe6f0;
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 6px 18px rgba(20, 40, 70, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.project-shot:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 30px rgba(20, 40, 70, 0.10);
+}
+
+
+/* GAMBAR GALLERY */
+
+.project-shot img {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    display: block;
+
+    object-fit: cover;
+
+    object-position: top center;
+
+    background: #f1f5f9;
+}
+
+
+/* CAPTION */
+
+.project-shot figcaption {
+    min-height: 54px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    padding: 10px 13px;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+}
+
+.project-shot figcaption span {
+    flex-shrink: 0;
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 25px;
+    height: 25px;
+
+    border-radius: 7px;
+
+    background: #edf3ff;
+
+    color: #2864e8;
+
+    font-size: 0.65rem;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   FEATURE LIST
+========================================================= */
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 16px;
+}
+
+.feature-item {
+    min-height: 150px;
+
+    padding: 20px;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 14px;
+
+    background: #f8fafc;
+}
+
+.feature-item strong {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #2864e8;
+
+    font-size: 0.72rem;
+}
+
+.feature-item h4 {
+    margin-bottom: 7px;
+
+    color: #172033;
+
+    font-size: 0.9rem;
+
+    line-height: 1.4;
+}
+
+.feature-item p {
+    color: #718096;
+
+    font-size: 0.78rem;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   PROJECT FOOTER
+========================================================= */
+
+.featured-footer {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 25px;
+
+    padding: 28px 40px 35px;
+
+    background: #f8fafc;
+
+    border-top: 1px solid #edf0f5;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured-main-image {
+        aspect-ratio: 16 / 9;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .featured-header {
+        padding: 28px 20px 18px;
+    }
+
+    .featured-description {
+        padding: 0 20px 20px;
+    }
+
+    .featured-section {
+        padding: 20px;
+    }
+
+    .featured-main-image {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        aspect-ratio: 16 / 10;
+    }
+
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-footer {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}

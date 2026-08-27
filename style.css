@@ -1,11 +1,8 @@
 /* =========================================================
    DHIMAS ALFIANTO — PORTFOLIO
-   FINAL SYNCHRONIZED STYLE
+   FINAL COMPACT & CONSISTENT STYLES
 ========================================================= */
 
-/* =========================
-   RESET & GLOBAL
-========================= */
 * {
     margin: 0;
     padding: 0;
@@ -46,9 +43,11 @@ select {
     margin: 0 auto;
 }
 
-/* =========================
+
+/* =========================================================
    NAVBAR
-========================= */
+========================================================= */
+
 .navbar {
     position: sticky;
     top: 0;
@@ -93,8 +92,7 @@ select {
     transition: color 0.2s ease;
 }
 
-.nav-menu a:hover,
-.nav-menu a.active {
+.nav-menu a:hover {
     color: #2864e8;
 }
 
@@ -109,8 +107,7 @@ select {
     transition: width 0.2s ease;
 }
 
-.nav-menu a:hover::after,
-.nav-menu a.active::after {
+.nav-menu a:hover::after {
     width: 100%;
 }
 
@@ -120,37 +117,36 @@ select {
     background: transparent;
     color: #111827;
     font-size: 1.45rem;
-    line-height: 1;
     cursor: pointer;
 }
 
-/* =========================
-   HERO / HOME
-========================= */
+
+/* =========================================================
+   HERO
+========================================================= */
+
 .hero {
     min-height: calc(100vh - 70px);
     display: flex;
     align-items: center;
-    padding: 68px 0 78px;
+    padding: 60px 0 68px;
     background:
         radial-gradient(
-            circle at 82% 20%,
-            rgba(40, 100, 232, 0.15),
-            transparent 28%
+            circle at 88% 18%,
+            rgba(40, 100, 232, 0.13),
+            transparent 25%
         ),
         linear-gradient(
             135deg,
-            #eef5ff 0%,
-            #e6effb 52%,
-            #dce9f8 100%
+            #f8fbff 0%,
+            #eef4fc 100%
         );
-    border-bottom: 1px solid #d8e4f3;
 }
 
 .hero-content {
     display: grid;
-    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
-    gap: 58px;
+    grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+    gap: 46px;
     align-items: center;
 }
 
@@ -159,21 +155,20 @@ select {
 }
 
 .hero-label {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     color: #2864e8;
-    font-size: 0.74rem;
+    font-size: 0.73rem;
     font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    letter-spacing: 1.9px;
 }
 
 .hero h1 {
-    margin-bottom: 24px;
-    color: #111827;
-    font-size: clamp(3.6rem, 7vw, 6rem);
+    margin-bottom: 20px;
+    color: #121a2a;
+    font-size: clamp(3.2rem, 6.4vw, 5.4rem);
+    line-height: 0.93;
     font-weight: 800;
-    line-height: 0.88;
-    letter-spacing: -3.8px;
+    letter-spacing: -3px;
 }
 
 .hero h1 span {
@@ -181,62 +176,28 @@ select {
 }
 
 .hero-description {
-    max-width: 700px;
-    margin-bottom: 31px;
-    color: #536277;
-    font-size: 1rem;
-    line-height: 1.8;
+    max-width: 680px;
+    margin-bottom: 27px;
+    color: #586579;
+    font-size: 0.98rem;
+    line-height: 1.75;
 }
 
 .hero-description strong {
     color: #172033;
-    font-weight: 800;
 }
 
 .hero-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 11px;
 }
 
-.hero-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.image-wrapper {
-    position: relative;
-    width: 255px;
-    height: 325px;
-    padding: 7px;
-    overflow: hidden;
-    border-radius: 25px;
-    background: #ffffff;
-    border: 1px solid #d5dfed;
-    box-shadow: 0 24px 55px rgba(31, 60, 100, 0.16);
-}
-
-.image-wrapper::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 18px;
-    pointer-events: none;
-    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7);
-}
-
-.image-wrapper img {
-    width: 100%;
-    height: 100%;
-    border-radius: 18px;
-    object-fit: cover;
-    object-position: center top;
-}
-
-/* =========================
+/* =========================================================
    BUTTONS
-========================= */
+========================================================= */
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -250,40 +211,68 @@ select {
         transform 0.2s ease,
         box-shadow 0.2s ease,
         background 0.2s ease,
-        border-color 0.2s ease,
-        color 0.2s ease;
+        border-color 0.2s ease;
 }
 
 .btn-primary {
     background: #2864e8;
-    color: #ffffff;
-    border: 1px solid #2864e8;
+    color: #fff;
     box-shadow: 0 9px 22px rgba(40, 100, 232, 0.18);
 }
 
 .btn-primary:hover {
     background: #1f55ce;
-    border-color: #1f55ce;
     transform: translateY(-2px);
 }
 
 .btn-secondary {
-    background: rgba(255, 255, 255, 0.72);
+    background: #fff;
     color: #2864e8;
-    border: 1px solid #b9cbed;
+    border: 1px solid #cfd8e6;
 }
 
 .btn-secondary:hover {
-    background: #edf3ff;
     border-color: #2864e8;
     transform: translateY(-2px);
 }
 
-/* =========================
-   SECTIONS
-========================= */
+
+/* =========================================================
+   PROFILE PHOTO
+========================================================= */
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper {
+    width: 245px;
+    height: 315px;
+    padding: 6px;
+    overflow: hidden;
+    border-radius: 23px;
+    background: #fff;
+    border: 1px solid #dfe6f0;
+    box-shadow: 0 22px 48px rgba(30, 55, 90, 0.14);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
+    object-fit: cover;
+    object-position: center top;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
 .section {
-    padding: 72px 0;
+    padding: 62px 0;
 }
 
 .section-light {
@@ -295,15 +284,14 @@ select {
 }
 
 .section-heading {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
 }
 
+/* Semua section menggunakan pola judul yang sama.
+   Label kecil seperti KOMPETENSI, PENDIDIKAN,
+   PENGALAMAN, dan HUBUNGI SAYA disembunyikan. */
 .section-heading p {
-    margin-bottom: 7px;
-    color: #2864e8;
-    font-size: 0.72rem;
-    font-weight: 800;
-    letter-spacing: 1.9px;
+    display: none;
 }
 
 .section-heading h2 {
@@ -318,9 +306,11 @@ select {
     color: #ffffff;
 }
 
-/* =========================
-   PROFILE
-========================= */
+
+/* =========================================================
+   PROFILE / ABOUT
+========================================================= */
+
 .about-content {
     display: grid;
     grid-template-columns: minmax(0, 1.45fr) minmax(290px, 0.8fr);
@@ -354,14 +344,8 @@ select {
     padding: 18px;
     border: 1px solid #e1e7ef;
     border-radius: 14px;
-    background: #ffffff;
+    background: #fff;
     box-shadow: 0 7px 20px rgba(20, 40, 70, 0.04);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.info-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 14px 30px rgba(20, 40, 70, 0.08);
 }
 
 .info-card span {
@@ -383,9 +367,11 @@ select {
     font-size: 0.76rem;
 }
 
-/* =========================
+
+/* =========================================================
    COMPETENCIES
-========================= */
+========================================================= */
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -397,7 +383,7 @@ select {
     padding: 20px;
     border: 1px solid #e1e7ef;
     border-radius: 15px;
-    background: #ffffff;
+    background: #fff;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -432,11 +418,11 @@ select {
     line-height: 1.6;
 }
 
-/* =========================
-   PROJECTS
-   Semua project dibuat sama
-   seperti card IoT.
-========================= */
+
+/* =========================================================
+   PROJECTS — COMPACT 4 COLUMNS
+========================================================= */
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -451,7 +437,7 @@ select {
     overflow: hidden;
     border: 1px solid #e1e7ef;
     border-radius: 16px;
-    background: #ffffff;
+    background: #fff;
     box-shadow: 0 7px 20px rgba(20, 40, 70, 0.045);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -570,16 +556,16 @@ select {
     font-weight: 800;
 }
 
-/* =========================
-   PROJECT DETAIL SUPPORT
-   Tetap dipertahankan hanya
-   jika index.html lama masih memilikinya.
-========================= */
+
+/* =========================================================
+   FEATURED PROJECT
+========================================================= */
+
 .featured-project {
     overflow: hidden;
     border: 1px solid #dfe6f0;
     border-radius: 22px;
-    background: #ffffff;
+    background: #fff;
     box-shadow: 0 15px 40px rgba(20, 40, 70, 0.07);
 }
 
@@ -781,9 +767,10 @@ select {
 }
 
 
-/* =========================
+/* =========================================================
    EDUCATION
-========================= */
+========================================================= */
+
 .timeline {
     position: relative;
     max-width: 900px;
@@ -823,7 +810,7 @@ select {
     padding: 19px 22px;
     border: 1px solid #e1e7ef;
     border-radius: 14px;
-    background: #ffffff;
+    background: #fff;
     box-shadow: 0 7px 20px rgba(20, 40, 70, 0.04);
 }
 
@@ -853,9 +840,10 @@ select {
 }
 
 
-/* =========================
+/* =========================================================
    EXPERIENCE
-========================= */
+========================================================= */
+
 .experience-list {
     max-width: 950px;
     margin: 0 auto;
@@ -905,9 +893,10 @@ select {
 }
 
 
-/* =========================
+/* =========================================================
    SOFT SKILLS
-========================= */
+========================================================= */
+
 .soft-skills {
     display: flex;
     justify-content: center;
@@ -921,19 +910,20 @@ select {
     padding: 8px 13px;
     border: 1px solid #dce6f7;
     border-radius: 999px;
-    background: #ffffff;
+    background: #fff;
     color: #465467;
     font-size: 0.73rem;
     font-weight: 700;
 }
 
 
-/* =========================
+/* =========================================================
    CONTACT
-========================= */
+========================================================= */
+
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
 }
 
@@ -955,16 +945,17 @@ select {
 }
 
 .contact-card strong {
-    color: #ffffff;
+    color: #fff;
     font-size: 0.86rem;
     line-height: 1.5;
     word-break: break-word;
 }
 
 
-/* =========================
+/* =========================================================
    FOOTER
-========================= */
+========================================================= */
+
 .footer {
     padding: 20px 0;
     background: #0b1120;
@@ -975,45 +966,29 @@ select {
 
 
 /* =========================================================
-   RESPONSIVE — ONLY ONE SET
+   TABLET
 ========================================================= */
 
-/* ---------- TABLET ---------- */
 @media (max-width: 1080px) {
 
-    .hero-content {
-        grid-template-columns: minmax(0, 1.1fr) minmax(245px, 0.9fr);
-        gap: 38px;
-    }
-
-    .hero h1 {
-        font-size: clamp(3.1rem, 7vw, 5rem);
-    }
-
-    .skills-grid,
     .projects-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .project-image {
-        height: 170px;
+        height: 165px;
     }
 
-    .project-content {
-        padding: 18px;
-    }
-
-    .project-content h3 {
-        font-size: 0.96rem;
-    }
-
-    .project-content p {
-        font-size: 0.74rem;
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
 
-/* ---------- MOBILE / TABLET SMALL ---------- */
+/* =========================================================
+   MOBILE
+========================================================= */
+
 @media (max-width: 768px) {
 
     .container {
@@ -1043,11 +1018,6 @@ select {
         box-shadow: 0 15px 30px rgba(20, 40, 70, 0.06);
     }
 
-    .nav-menu.open,
-    .nav-menu.active {
-        display: flex;
-    }
-
     .nav-menu a {
         padding: 11px 0;
     }
@@ -1058,12 +1028,12 @@ select {
 
     .hero {
         min-height: auto;
-        padding: 50px 0 60px;
+        padding: 48px 0 56px;
     }
 
     .hero-content {
         grid-template-columns: 1fr;
-        gap: 34px;
+        gap: 30px;
         text-align: center;
     }
 
@@ -1072,25 +1042,14 @@ select {
     }
 
     .image-wrapper {
-        width: 175px;
-        height: 225px;
-    }
-
-    .hero-label {
-        font-size: 0.68rem;
-        letter-spacing: 1.5px;
-    }
-
-    .hero h1 {
-        font-size: clamp(3rem, 14vw, 4.3rem);
-        letter-spacing: -2.6px;
+        width: 170px;
+        height: 220px;
     }
 
     .hero-description {
         margin-left: auto;
         margin-right: auto;
-        font-size: 0.88rem;
-        line-height: 1.7;
+        font-size: 0.86rem;
     }
 
     .hero-buttons {
@@ -1098,7 +1057,7 @@ select {
     }
 
     .section {
-        padding: 60px 0;
+        padding: 55px 0;
     }
 
     .about-content {
@@ -1111,8 +1070,8 @@ select {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .project-gallery {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+    .project-image {
+        height: 165px;
     }
 
     .featured-header {
@@ -1133,6 +1092,10 @@ select {
         margin-right: 22px;
     }
 
+    .project-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .featured-footer {
         padding-left: 22px;
         padding-right: 22px;
@@ -1149,7 +1112,10 @@ select {
 }
 
 
-/* ---------- MOBILE ---------- */
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
 @media (max-width: 560px) {
 
     .skills-grid,
@@ -1160,18 +1126,6 @@ select {
 
     .project-image {
         height: 180px;
-    }
-
-    .project-content {
-        padding: 19px;
-    }
-
-    .project-content h3 {
-        font-size: 0.96rem;
-    }
-
-    .project-content p {
-        font-size: 0.75rem;
     }
 
     .about-info {
@@ -1191,21 +1145,13 @@ select {
         padding-left: 18px;
         padding-right: 18px;
     }
-
-    .featured-footer {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 18px;
-        padding-right: 18px;
-    }
-
-    .featured-footer .btn {
-        width: 100%;
-    }
 }
 
 
-/* ---------- VERY SMALL MOBILE ---------- */
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
 @media (max-width: 420px) {
 
     .logo {
@@ -1221,12 +1167,11 @@ select {
         height: 195px;
     }
 
-    .hero-buttons {
-        width: 100%;
-        flex-direction: column;
-    }
-
     .btn {
         width: 100%;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
     }
 }
